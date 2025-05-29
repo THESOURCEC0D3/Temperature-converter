@@ -5,10 +5,14 @@
 }
 
 body{
+    margin: 0;
+    height: 100vh;
     background-image: url('./images/w.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: right;
+    overflow: hidden;
+    background-attachment: fixed;
 }
 
 .container{
@@ -48,14 +52,41 @@ select{
     border-radius: 5px;
     border: none;
     font-size: 18px;
-    width: 50%;
+    width: 60%;
 }
 
 button{
-    width: 50%;
+    width: 60%;
     border-radius: 5px;
     border: none;
     padding: 0.5em;
     background-color: white;
     font-size: 18px;
+}
+
+/*Responsive design*/
+@media (max-width: 600px){
+    input{
+        width: 80%;
+        padding: 0.5em;
+        border-radius: 5px;
+        border: none;
+    }
+
+    select{
+        padding: 0.5em;
+        border-radius: 5px;
+        border: none;
+        font-size: 18px;
+        width: 80%;
+    }
+
+    button{
+        width: 80%;
+        border-radius: 5px;
+        border: none;
+        padding: 0.5em;
+        background-color: white;
+        font-size: 18px;
+    }
 }
