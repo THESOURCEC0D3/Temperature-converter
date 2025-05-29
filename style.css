@@ -18,7 +18,7 @@ body{
 .container{
     width: 80%;
     max-width: 500px;
-    margin: 200px auto;
+    margin: 180px auto;
   border: 1px solid grey;
   border-radius: 10px;
   padding: 1em;
@@ -39,6 +39,10 @@ input{
 
 input:focus{
     outline: none;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 0 8px #4CAF50;
+    transform: scale(1.5);
+    transition: 0.3s ease-in-out;
 }
 
 input::placeholder{
@@ -46,6 +50,23 @@ input::placeholder{
     font-size: 18px;
     text-align: center;
 }
+
+
+#convertionResult {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+  
+  /* Apply green glow and slight pop when there's content */
+  #convertionResult:not(:placeholder-shown) {
+    background-color: #e6ffe6;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 0 10px #4CAF50;
+    transform: scale(1.5);
+  }  
+
+
 
 select{
     padding: 0.5em;
@@ -67,7 +88,7 @@ button{
 /*Responsive design*/
 @media (max-width: 600px){
     input{
-        width: 80%;
+        width: 85%;
         padding: 0.5em;
         border-radius: 5px;
         border: none;
@@ -78,11 +99,11 @@ button{
         border-radius: 5px;
         border: none;
         font-size: 18px;
-        width: 80%;
+        width: 85%;
     }
 
     button{
-        width: 80%;
+        width: 85%;
         border-radius: 5px;
         border: none;
         padding: 0.5em;
