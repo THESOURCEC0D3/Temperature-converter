@@ -22,10 +22,10 @@ if(convertion === ""){
 
 let input = Number(inputvalue);
 
-if(isNaN(input)){
-    alert('Please enter a valid number')
-    return;
-}
+// if(isNaN(input)){
+//     alert('Please enter a valid number')
+//     return;
+// }
 if(convertion === "F to C"){
  result = (input-32) * 5/9; 
  resultField.value = `${result.toFixed(3)} °C`;
